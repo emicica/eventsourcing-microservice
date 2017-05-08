@@ -126,7 +126,7 @@ if (!$port) {
 
 /** @var StreamSelectLoop $loop */
 $loop = Factory::create();
-$uri = '127.0.0.1:' . $port;
+$uri = '0.0.0.0:' . $port;
 
 $service = new Service();
 $service->run($loop, $uri, $filePath);
